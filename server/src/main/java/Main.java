@@ -25,7 +25,6 @@ public class Main {
                 try {
 
                     var socket = serverSocket.accept();
-                    System.out.println("New client connected.");
 
                     executor.execute(new ServerSocketThread(socket));
 
